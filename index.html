@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte</title>
+    <!-- Leafletjs CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" />
+    <!-- Leafletjs JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
+    <!--initialize geosearch -->
+    <link  href="https://unpkg.com/leaflet-geosearch@latest/assets/css/leaflet.css" rel="stylesheet" />
+    <script src="https://unpkg.com/leaflet-geosearch@latest/dist/bundle.min.js"></script> 
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-geosearch/dist/geosearch.css"/>
+
+    <script src="https://unpkg.com/leaflet-geosearch/dist/geosearch.min.js"></script> 
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="icon" href="kissal-favicon-white.png" type="image/x-icon"/>
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-primary text-light">
+          <div class="container-fluid">
+            <a class="navbar-brand text-dark" href="index.html" style="margin-left: 20px;"><img src="logo-no-background.png" width="100px" height="25px" alt="Le logo et le nom du sit" class="imglogo"></a>
+    
+        <div class="off-screen-menu">
+          <ul>
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="about.html">A propos</a></li>
+          </ul>
+          <h3>Mentions Légales</h3>
+          <p>&copy; 2024 KISSAL. Tous droits réservés.</p>
+        </div>
+    
+        <nav>
+          <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+    
+    
+            </div>
+        </nav>
+    </header>
+
+    <!-- L'endroit où la carte va s'afficher -->
+    <div id="map"></div>
+    
+    
+      <button class="locate-button" id="locate-button"><img src="Projet/Localisation icône.jpeg" alt="Se localiser" width="35px" height="35px" class="imgbutton"/></button>
+
+      <button class="info-button" id="toggleButton"><img src="Projet/Info icône.jpeg" alt="Bouton pour donner une info" width="35px" height="35px" class="imgbutton"/></button> 
+      
+      <button class="signal-button" id="basculeButton"><img src="Projet/signler une info.png" alt="Signaler une info" width="35px" height="35px" class="imgbutton"/></button>
+    
+
+
+    <section class="All" id="myDiv">
+        <div class="headerr"> 
+            Derniéres nouvelles
+        </div>
+        <div class="panneau">
+            <button class="carreaux1"> <img class="img" src="attention.png"> </button>
+            <button class="carreaux2"> <img class="img" src="attention.png"> </button>
+            <button class="carreaux3"> <img class="img" src="attention.png"> </button>
+            <button class="carreaux4"> <img class="img" src="attention.png"> </button>
+        </div>
+        </section>
+
+        <section class="All2" id="mySection">
+            <div class="headerr"> 
+                Donnez des nouvelles
+            </div>
+        <div class="panneau">
+            <button class="carreaux1"> <img class="img" src="attention.png"> </button>
+            <button class="carreaux2"> <img class="img" src="attention.png"> </button>
+            <button class="carreaux3"> <img class="img" src="attention.png"> </button>
+            <button class="carreaux4"> <img class="img" src="attention.png"> </button>
+        </div>
+    </section>
+    
+    <!-- <script src="script.js"></script> -->
+    <footer class="fixed-bottom">
+        <p></p>
+    </footer>
+    
+      <script src="script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+</html>

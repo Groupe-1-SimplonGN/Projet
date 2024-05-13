@@ -1,0 +1,257 @@
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+  }
+  
+  header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #3FEBEB;
+    color: #000;
+    text-align: center;
+    padding: 0px;
+    z-index: 1000;
+  }
+  
+  
+  
+  /* base styles */
+  * {
+    box-sizing: border-box;
+    list-style: none;
+    /* text-decoration: none; */
+  }
+  
+  p, a {
+    color: black;
+  }
+  a:visited {
+    color: black;
+  }
+  a:hover {
+    color: black;
+  }
+  ul li a{
+    text-decoration: none;
+  }
+
+  .imglogo {
+    position: relative;
+    right: -10px;
+  }
+  
+  
+  /* off-screen-menu */
+  .off-screen-menu {
+    background-color:  #3FEBEB;
+    height: 60vh;
+    width: 100%;
+    max-width: 230px;
+    position: fixed;
+    top: 08vh;
+    left: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: bold;
+    color: #000;
+    transition: .3s ease;
+    z-index: 1000;
+  }
+  .off-screen-menu.active {
+    left: 0;
+  }
+  
+  /* nav */
+  nav {
+    padding: 0px;
+    display: flex;
+  }
+  
+  /* ham menu */
+  .ham-menu {
+    height: 30px;
+    width: 30px;
+    margin-left: auto;
+    position: relative;
+    cursor: pointer;
+  }
+  .ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: #0f0e0e;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+  }
+  .ham-menu span:nth-child(1) {
+    top: 25%;
+  }
+  .ham-menu span:nth-child(3) {
+    top: 75%;
+  }
+  .ham-menu.active span {
+    background-color: black;
+  }
+  .ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  .ham-menu.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.locate-button {
+    position: absolute;
+    top: auto;
+    left: 10px;
+    right: auto;
+    bottom: 15px;
+    z-index: 1000;
+    background-color: aceblue;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.imgbutton {
+    border: none;
+    border-radius: 55px;
+}
+
+.info-button {
+    
+    position: absolute;
+    top: auto;
+    left: 90px;
+    right: auto;
+    bottom: 15px;
+    z-index: 1000;
+    background-color: aceblue;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.signal-button {
+    position: absolute;
+    top: auto;
+    left: 180px;
+    right: auto;
+    bottom: 15px;
+    background-color: aceblue;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    z-index: 1000;
+    
+}
+
+.All {
+    margin-left: 10px;
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    
+    z-index: 800;
+}
+
+#myDiv {
+    display: none;
+}
+
+.All2 {
+    margin-left: 10px;
+    position: absolute;
+    left: 10px;
+    bottom: 80px;
+    z-index: 800;
+}
+
+#mySection {
+    display: none;
+}
+
+.panneau {
+    width: 250px;
+    height: 160px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+      
+}
+
+.headerr {
+    background-color: #3FEBEB;
+    width: 250px;
+    height: 30px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.17rem;
+    color: white;
+}
+
+
+.carreaux1 {
+    background-color: rgb(245, 223, 220);
+    width: 62,5px;
+    height: 80px;
+    border: none;
+}
+
+.carreaux2 {
+    background-color: rgb(220, 238, 245);
+    width: 62,5px;
+    height: 80px;
+    border: none;
+}
+.carreaux3 {
+    background-color: rgb(220, 245, 223);
+    width: 62,5px;
+    height: 80px;
+    border: none;
+    border-bottom-left-radius: 12px;
+}
+.carreaux4 {
+    background-color: rgba(220, 20, 60, 0.493);
+    width: 62,5px;
+    height: 80px;
+    border: none;
+    border-bottom-right-radius: 12px;
+}
+
+.img {
+    width: 50px;
+}
+
+
+footer {
+  background-color: #99EFF5;
+  z-index: 1000;
+}
